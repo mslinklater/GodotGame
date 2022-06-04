@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Test/2D/Label.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 0.113
+anchor_bottom = 0.077
+margin_right = -468.176
+margin_bottom = -32.2
+text = "This is a label"
+script = ExtResource( 1 )
+__meta__ = {
+"_editor_description_": "Editor Desc"
+}
