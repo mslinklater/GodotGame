@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://SceneManagement/SceneManagementRoot.gd" type="Script" id=1]
+
+[node name="SceneManagementRoot" type="Node"]
+script = ExtResource( 1 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Front End Button" type="Button" parent="UI"]
+margin_right = 72.0
+margin_bottom = 20.0
+text = "Front End"
+
+[node name="Level 1 Button" type="Button" parent="UI"]
+margin_left = 80.0
+margin_right = 152.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 134, 54 )
+text = "Level 1"
+
+[node name="Level 2 Button" type="Button" parent="UI"]
+margin_left = 160.0
+margin_right = 232.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 134, 54 )
+text = "Level 2"
+
+[node name="Level 3 Button" type="Button" parent="UI"]
+margin_left = 240.0
+margin_right = 312.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 134, 54 )
+text = "Level 3"
+
+[node name="Pause" type="Button" parent="UI"]
+margin_left = 320.0
+margin_right = 392.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( 134, 54 )
+text = "Pause"
+
+[connection signal="button_down" from="UI/Front End Button" to="." method="_on_Front_End_Button_button_down"]
+[connection signal="button_down" from="UI/Level 1 Button" to="." method="_on_Level_1_Button_button_down"]
+[connection signal="button_down" from="UI/Level 2 Button" to="." method="_on_Level_2_Button_button_down"]
+[connection signal="button_down" from="UI/Level 3 Button" to="." method="_on_Level_3_Button_button_down"]
+[connection signal="button_down" from="UI/Pause" to="." method="_on_Pause_button_down"]

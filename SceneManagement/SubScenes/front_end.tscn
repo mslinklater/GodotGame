@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Resources/Fonts/MyFont.tres" type="DynamicFont" id=1]
+
+[node name="FrontEndRoot" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = ExtResource( 1 )
+text = "FRONT END"
+align = 1
+valign = 1
