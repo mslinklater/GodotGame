@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float blue = 1.0;
+uniform float radius = 1.0;
+uniform float speed = 1.0;
+
+void fragment(){
+	COLOR = texture(TEXTURE, UV);
+	COLOR.b = blue;
+}
+
+void vertex(){
+	VERTEX += vec2(cos(TIME*speed)*radius, sin(TIME*speed)*radius);
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/blue = 1.0
+shader_param/radius = 15.0
+shader_param/speed = 20.0

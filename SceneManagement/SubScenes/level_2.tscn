@@ -1,17 +1,18 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://Models/suzanne.glb" type="PackedScene" id=1]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="CubeMesh" id=1]
 
-[node name="Level1Root" type="Spatial"]
+[node name="Level2Root" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36693, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.537633, 2.28504, 0 )
 mesh = SubResource( 1 )
 material/0 = null
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 0.912285, -0.171101, 0.372104, 0, 0.908552, 0.417772, -0.409557, -0.381127, 0.828858, 3.52834, 4.43372, 7.88379 )
-
-[node name="suzanne" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.00324, 0 )
